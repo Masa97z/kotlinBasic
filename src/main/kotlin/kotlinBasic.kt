@@ -5,6 +5,7 @@ println(add())
 fun add():Int{
     var x : Int = 0
     ++x
+
     return x
 }
 fun follow(followC: Int) =  followC + 1
