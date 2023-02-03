@@ -12,5 +12,9 @@ fun main() {
     // local variable jest in function
     var prices: Double = 7.14
     println(prices.toString())
-    print(link)
+    println(link)
+    println(link.length)
+    println(link.toUpperCase())
+   // println(link.toDouble()) // not run
+    println(link.isEmpty())
 }
