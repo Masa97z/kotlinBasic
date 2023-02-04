@@ -11,16 +11,17 @@ var isBlocked  = true
 val list =  mutableListOf("a","b","c")
 fun main() {
     // local variable jest in function
-    var prices: Double = 7.14
-    println(prices.toString())
-    println(link)
-    println(link.length)
-    println(link.toUpperCase())
-   // println(link.toDouble()) // not run
-    println(link.isEmpty())
-    statmentIf(isBlocked)
-    println(getAgeStageRange(like))
-    loop()
+//    var prices: Double = 7.14
+//    println(prices.toString())
+//    println(link)
+//    println(link.length)
+//    println(link.toUpperCase())
+//   // println(link.toDouble()) // not run
+//    println(link.isEmpty())
+//    statmentIf(isBlocked)
+//    println(getAgeStageRange(like))
+    //loop()
+    breakloop()
 }
 
 fun statmentIf(isBlock:Boolean){
@@ -58,3 +59,14 @@ fun loop(){
         print(it+"\t")
     }
 }
+fun breakloop(){
+    //label and break statement
+   loop1@ for (i in 1..5){
+        loop2@ for (j in 1..10){
+            if (i==2){break@loop1}
+            print("${i*j}\t")
+        }
+        print("\n")
+    }
+}
+
