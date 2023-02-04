@@ -8,7 +8,7 @@ var like : Int = 6
 var price :Float = 3.4f
 var city: String? = null
 var isBlocked  = true
-
+val list =  mutableListOf("a","b","c")
 fun main() {
     // local variable jest in function
     var prices: Double = 7.14
@@ -20,6 +20,7 @@ fun main() {
     println(link.isEmpty())
     statmentIf(isBlocked)
     println(getAgeStageRange(like))
+    loop()
 }
 
 fun statmentIf(isBlock:Boolean){
@@ -42,4 +43,18 @@ fun getAgeStageRange(age: Int):String{
         else -> "دخل عمرك عدك *_^"
     }
     return result
+}
+// function to loop
+fun loop(){
+    for (i in 0 until list.size){
+        print(list[i]+"\t")
+    }
+    println("\n___________________")
+    for (elemnt in list){
+        print(elemnt+"\t")
+    }
+    println("\n__________________")
+    list.forEach{
+        print(it+"\t")
+    }
 }
