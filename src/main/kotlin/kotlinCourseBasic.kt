@@ -69,4 +69,7 @@ fun breakloop(){
         print("\n")
     }
 }
+fun funList(list:List<String>){
+
+}
 
